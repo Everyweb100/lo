@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+
+    <style>
+      body,
+      html {
+        background-color: black;
+        overflow: hidden;
+      }
+
+      .flex-container {
+        display: flex;
+        margin: 10% 30%;
+        font-family: "Open Sans", sans-serif;
+      }
+      .Newton {
+        text-align: left;
+        color: white;
+        line-height: 50px;
+        padding: 20px;
+        font-size: 16px;
+        flex: 1;
+      }
+
+      label {
+        display: block;
+      }
+
+      .submit {
+        background-color: green;
+        border-style: none;
+        border-radius: 5px;
+        font-weight: bold;
+        width: 100px;
+        height: 40px;
+      }
+
+      .submi {
+        color: green;
+        font-weight: bold;
+      }
+
+      input {
+        background-color: black;
+
+        color: white;
+        outline-style: none;
+
+        border-width: 0;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 5px;
+        padding: 0;
+        height: 38px;
+        width: 100%;
+      }
+
+      .form-data {
+        line-height: 60px;
+      }
+
+      @media (min-width: 319px) and (max-width: 480px) {
+        .flex-container {
+          display: flex;
+          margin: 25% 0;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="flex-container">
+      <div class="Newton">
+        <img src="./logo.svg" alt="" />
+        <h3>LOG IN</h3>
+        <div class="form-data">
+          <form action="" method="get" class="form-example">
+            <div>
+              <label for="email">Enter Email Addres:</label>
+              <input type="email" id="email" pattern=".+@globex\.com" size="30" required />
+            </div>
+            <button class="submit">Log In</button>
+          </form>
+        </div>
+        <p>New to Busha? <span class="submi">Create an account</span></p>
+      </div>
+    </div>
+  </body>
+</html>
